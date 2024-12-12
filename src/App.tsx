@@ -117,12 +117,12 @@ export default function App() {
             <div className="space-y-2">
               <div className="flex space-x-4">
                 <div>
-                  <input type="radio" id="male" onClick={(e) => { setGender("M") }} checked={gender == "M"} name="gender" value="M" className="mr-2" />
+                  <input type="radio" id="male" onClick={() => { setGender("M") }} checked={gender == "M"} name="gender" value="M" className="mr-2" />
                   <label htmlFor="female">M</label>
                 </div>
 
                 <div>
-                  <input type="radio" id="female" name="gender" onClick={(e) => { setGender("F") }} checked={gender == "F"} value="F" className="mr-2" />
+                  <input type="radio" id="female" name="gender" onClick={() => { setGender("F") }} checked={gender == "F"} value="F" className="mr-2" />
                   <label htmlFor="female">F</label>
                 </div>
               </div>
