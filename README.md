@@ -5,9 +5,9 @@ A simple and efficient tax calculator designed to compute personal income tax ba
 [SmartTax Calculator](https://utdevnp.github.io/SmartTax/)  
 
 ## Story Behind Creating SmartTax  
-The idea for SmartTax originated when a friend, who works in People Operations, shared her challenges with handling employee tax-related queries. Many employees were confused about their tax calculations, and she often had to manually compute taxes in Excel to explain the process.  
+The idea for SmartTax came from a simple need—to quickly and accurately calculate how much I and others like me are contributing in income tax and at what percentage. Many of us often find it confusing to break down our taxable income into different brackets and calculate the exact amounts.  
 
-To simplify this repetitive task and provide a more accessible solution for everyone, SmartTax was created. This tool aims to make tax computations easier and more accurate by incorporating features like marital status and gender-based exemptions. It is designed to help individuals and HR professionals manage tax calculations effortlessly.  
+This tool was created for individuals who want prompt and reliable results without the hassle of using spreadsheets or manual calculations. By simplifying tax computations and incorporating deductions, allowances, and tax brackets, SmartTax provides an easy way to understand your tax contributions and liabilities.  
 
 
 ## Features  
