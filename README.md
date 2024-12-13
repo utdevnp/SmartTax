@@ -5,7 +5,11 @@ A simple and efficient tax calculator designed to compute personal income tax ba
 [SmartTax Calculator](https://utdevnp.github.io/SmartTax/)  
 
 ## Story Behind Creating SmartTax  
-As a developer and taxpayer, I realized the challenges many individuals face when calculating their taxes, especially with Nepal’s complex tax brackets and allowances. The idea behind SmartTax was to provide a user-friendly tool to simplify these calculations, making tax computation straightforward and accessible for everyone. By integrating features like marital status and gender-based exemptions, SmartTax aims to cater to a broader audience, ensuring accurate results for both married and single taxpayers.  
+## Story Behind Creating SmartTax  
+The idea for SmartTax originated when a friend, who works in People Operations, shared her challenges with handling employee tax-related queries. Many employees were confused about their tax calculations, and she often had to manually compute taxes in Excel to explain the process.  
+
+To simplify this repetitive task and provide a more accessible solution for everyone, SmartTax was created. This tool aims to make tax computations easier and more accurate by incorporating features like marital status and gender-based exemptions. It is designed to help individuals and HR professionals manage tax calculations effortlessly.  
+
 
 ## Features  
 - **Tax Calculation Based on Nepal’s Tax Rules**: Includes the latest tax brackets as per the 2080/81 budget.  
