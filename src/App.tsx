@@ -166,7 +166,7 @@ export default function App() {
           <h4 className=" text-xl mb-1 mt-3">Deductions</h4>
           <div className="grid grid-cols-2 gap-4 ">
             <div className="space-y-1">
-              <label>Provident Fund (Monthly) </label>
+              <label>Provident Fund / SSF (Monthly) </label>
               <input type="number" onChange={(e) => setProvidendFund(parseInt(e.target.value))} className="w-full p-2 border rounded" value={providendFund} />
             </div>
             <div>
@@ -213,14 +213,14 @@ export default function App() {
         {/* Right Column */}
         <div className="w-1/3 bg-white p-4 rounded-lg shadow">
           {
-            gender === "F" ? <div className="bg-[#83f0ab] p-3 rounded-lg justify-items-center mb-3 text-center">
+            gender === "F" && maritalStatus == "S" ? <div className="bg-[#83f0ab] p-3 rounded-lg justify-items-center mb-3 text-center">
               Female Tax Rebate <b className="text-xl">{amountFormatter(annualTax * 0.10)}</b><br></br>
               <small> <a href="" target="_blank" className="text-blue-600">How do you get rebate ?</a></small>
             </div> : ""
         }
 
           <div className="bg-[#f8f4f4] p-3 rounded-lg  justify-items-center mb-3">
-            <h3 className="text-xl font-semibold mb-4">Annual Income </h3>
+            <h3 className="text-xl font-semibold mb-4">Gross Annual Income </h3>
             <div className="flex items-center space-x-2">
               <span className="text-3xl text-green-700">{amountFormatter(annualIncome)}</span>
             </div>
@@ -231,6 +231,7 @@ export default function App() {
             <div className="flex items-center space-x-2">
               <span className="text-3xl text-red-700">{amountFormatter(annualDeductions)}</span>
             </div>
+            <small className="text-blue-600">Tax free amount...</small>
           </div>
 
 
