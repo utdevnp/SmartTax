@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { amountFormatter, calculateTax } from "./helper";
-let citAndSsfSumDisplay = 0;
 
 export default function App() {
   const [basicSalary, setBasicSalary] = useState(0);
@@ -61,8 +60,6 @@ export default function App() {
       houseInsuranceLimit = 5000;
     }
 
-    citAndSsfSumDisplay = 0;
-    
     const annualDeductions = citAndSsfSum + houseInsuranceLimit + medicalInsuranceLimit + lifeInsuranceLimit;
     setAnnualDeductions(annualDeductions);
 
