@@ -38,7 +38,6 @@ export default function App() {
     const annualCIT = cit * 12;
 
     let citAndSsfSum = annualProvidentFund + annualCIT;
-    citAndSsfSumDisplay = annualProvidentFund + annualCIT;
 
     if (citAndSsfSum > 500000) {
       citAndSsfSum = 500000;
@@ -46,22 +45,24 @@ export default function App() {
       citAndSsfSum = annualProvidentFund + annualCIT;
     }
     
-    let medicalInsuranceLimit = 0;
-    let lifeInsuranceLimit = 0;
-    let houseInsuranceLimit = 0;
+    let medicalInsuranceLimit = medicalInsurance;
+    let lifeInsuranceLimit = lifeInsurance;
+    let houseInsuranceLimit = houseInsurance;
 
     if (medicalInsurance > 20000) {
       medicalInsuranceLimit = 20000;
     }
 
     if (lifeInsurance > 40000) {
-      lifeInsuranceLimit = 20000;
+      lifeInsuranceLimit = 40000;
     }
 
     if (houseInsurance > 5000) {
       houseInsuranceLimit = 5000;
     }
 
+    citAndSsfSumDisplay = 0;
+    
     const annualDeductions = citAndSsfSum + houseInsuranceLimit + medicalInsuranceLimit + lifeInsuranceLimit;
     setAnnualDeductions(annualDeductions);
 
@@ -168,7 +169,7 @@ export default function App() {
           <h4 className=" text-xl mb-1 mt-3">Deductions</h4>
           <div className="grid grid-cols-2 gap-4 ">
             <div className="space-y-1">
-              <label>Provident Fund (Monthly)</label>
+              <label>Provident Fund (Monthly) </label>
               <input type="number" onChange={(e) => setProvidendFund(parseInt(e.target.value))} className="w-full p-2 border rounded" value={providendFund} />
             </div>
             <div>
@@ -229,11 +230,10 @@ export default function App() {
           </div>
 
           <div className="bg-[#f8f4f4a3] p-3 rounded-lg  justify-items-center mb-3">
-            <h3 className="text-xl font-semibold mb-4">Total Deductions</h3>
+            <h3 className="text-xl font-semibold mb-4">Tax Exemption Deductions</h3>
             <div className="flex items-center space-x-2">
               <span className="text-3xl text-red-700">{amountFormatter(annualDeductions)}</span>
             </div>
-            <small className="text-blue-600">Tax relief amount <b>{amountFormatter(citAndSsfSumDisplay)}</b></small>
           </div>
 
 
